@@ -162,6 +162,16 @@ export default class App extends React.Component {
                                         <img src={ `${ PUBLIC_URL }/imgs/logo.svg` } className="header__logo image" alt="Adidas Logo" />
                                     </NavLink>
                                 </li>
+                                <li className="navigation-item">
+                                    <a href={ `${ PUBLIC_URL }/requirements/REACT-Challenge-eCom.pdf` } rel="noopener noreferrer" target="_blank">
+                                        About
+                                    </a>
+                                </li>
+                                <li className="navigation-item">
+                                    <a href="https://github.com/LuXDAmore/adidas-interview" rel="noopener noreferrer" target="_blank">
+                                        Github
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
 
