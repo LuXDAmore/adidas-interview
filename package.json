@@ -32,20 +32,6 @@
     "files": [
         "src"
     ],
-    "dependencies": {
-        "@testing-library/jest-dom": "^5.11.4",
-        "@testing-library/react": "^11.0.4",
-        "@testing-library/user-event": "^12.1.6",
-        "color-convert": "^2.0.1",
-        "modern-normalize": "^1.0.0",
-        "node-sass": "^4.14.1",
-        "react": "^16.13.1",
-        "react-color": "^2.18.1",
-        "react-dom": "^16.13.1",
-        "react-router-dom": "^5.2.0",
-        "react-scripts": "3.4.3",
-        "sweetalert2": "^10.3.5"
-    },
     "scripts": {
         "serve": "yarn run start",
         "dev": "yarn run start",
@@ -60,11 +46,24 @@
         "lint": "yarn run eslint-check && yarn run stylelint-check",
         "lint-fix": "yarn run eslint-fix && yarn run stylelint-check"
     },
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.0.4",
+        "@testing-library/user-event": "^12.1.6",
+        "color-convert": "^2.0.1",
+        "modern-normalize": "^1.0.0",
+        "node-sass": "^4.14.1",
+        "react": "^16.13.1",
+        "react-color": "^2.18.1",
+        "react-dom": "^16.13.1",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "3.4.3",
+        "sweetalert2": "^10.3.5"
+    },
     "devDependencies": {
         "@commitlint/cli": "^11.0.0",
         "@commitlint/config-conventional": "^11.0.0",
         "babel-eslint": "^10.0.3",
-        "copyfiles": "^2.3.0",
         "eslint-config-standard": "^14.1.1",
         "eslint-loader": "^4.0.0",
         "eslint-plugin-compat": "^3.8.0",
