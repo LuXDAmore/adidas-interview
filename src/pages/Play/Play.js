@@ -5,15 +5,11 @@ import PropTypes from 'prop-types';
 // Third parties
 import Swal from 'sweetalert2';
 
+// Components
+import Box from '../../components/Box/Box';
+
 // Style
 import './Style.scss';
-
-// Components
-const Box = React.lazy(
-    () => import(
-        '../../components/Box/Box'
-    )
-);
 
 // Declaration
 export default class Play extends React.Component {
@@ -145,15 +141,13 @@ export default class Play extends React.Component {
             boxes.push(
                 (
                     <li key={ `${ level }-${ index }` }>
-                        <React.Suspense fallback={<div className="loading spinner spinner--small" />}>
-                            <Box
-                                isWinner={ isWinner }
-                                onResult={ this.handleResults }
-                                backgroundColor={ backgroundColor }
-                                reveal={ this.state.played }
-                                ref={ isWinner ? this.state.winnerBox : null }
-                            />
-                        </React.Suspense>
+                        <Box
+                            isWinner={ isWinner }
+                            onResult={ this.handleResults }
+                            backgroundColor={ backgroundColor }
+                            reveal={ this.state.played }
+                            ref={ isWinner ? this.state.winnerBox : null }
+                        />
                     </li>
                 )
             );
