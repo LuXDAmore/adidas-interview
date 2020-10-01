@@ -5,24 +5,20 @@ import React from 'react';
 import './Style.scss';
 
 // Declaration
-export default class FourZeroFour extends React.Component {
+export default function FourZeroFour() {
 
-    render() {
-
-        return (
-            <div className="not-found page">
-                <h1 className="title">
+    return (
+        <section className="not-found page">
+            <h1 className="title">
                     404
-                </h1>
-                <h2 className="subtitle">
+            </h1>
+            <h2 className="subtitle">
                     Page not found
-                </h2>
-                <blockquote className="payoff">
+            </h2>
+            <blockquote className="payoff">
                     I tried to catch some fog, but i mist
-                </blockquote>
-            </div>
-        );
-
-    }
+            </blockquote>
+        </section>
+    );
 
 }
