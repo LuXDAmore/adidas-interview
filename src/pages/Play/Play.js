@@ -38,6 +38,7 @@ export default class Play extends React.Component {
 
         let url = pathname;
 
+        // TODO: This should be done better, it re-render the grid after clicking on a Box.
         ! this.props.played && this.setState(
             {
                 played: true,
