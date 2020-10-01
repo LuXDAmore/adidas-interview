@@ -1,0 +1,106 @@
+@import "../../styles/colors";
+
+.app {
+
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 36px;
+    transition: background-color .3s ease-in-out;
+
+}
+
+.header {
+
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+
+    &__logo {
+
+        max-width: 100px;
+        mix-blend-mode: soft-light; // stylelint-disable-line
+
+    }
+
+}
+
+.content {
+
+    position: relative;
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+
+}
+
+.footer {
+
+    position: fixed;
+    right: 0;
+    bottom: 8px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+// Third parties
+.circle-picker {
+
+    display: inline-flex !important;
+
+    > span {
+
+        > div {
+
+            > span {
+
+                > div {
+
+                    border: 2px dotted rgba( #fff, .81 );
+
+                }
+
+            }
+
+        }
+
+        &:last-child {
+
+            > div {
+
+                margin-right: 0 !important;
+
+            }
+
+        }
+
+    }
+
+}
+
+.swal-overlay {
+
+    background-color: rgba( 0, 0, 0, .1 );
+
+    .swal-modal,
+    .swal-footer {
+
+        text-align: center;
+
+    }
+
+}

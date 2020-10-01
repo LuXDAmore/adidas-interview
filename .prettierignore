@@ -1,0 +1,12 @@
+bower_components/
+node_modules/
+backup/
+design/
+.vscode
+coverage
+build
+*.php
+*.vendor.*
+*.min.*
+
+serviceWorker.js

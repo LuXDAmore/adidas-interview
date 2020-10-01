@@ -1,0 +1,57 @@
+@import "../../styles/colors";
+
+.game-over {
+
+    text-align: center;
+
+    > .title {
+
+        margin: 0 auto;
+        font-size: 90px;
+        line-height: 1;
+        opacity: .63;
+
+        @media ( min-width: 767px ) {
+
+            margin-bottom: 32px;
+            font-size: 140px;
+
+        }
+
+    }
+
+    > .image {
+
+        max-width: 175px;
+        margin: 16px auto 8px;
+
+        @media ( min-width: 400px ) {
+
+            max-width: 281px;
+
+        }
+        @media ( min-width: 767px ) {
+
+            max-width: 400px;
+            margin-bottom: 32px;
+
+        }
+
+    }
+
+    > .payoff {
+
+        margin: 0 auto 8px;
+        font-weight: 300;
+        font-size: 14px;
+        opacity: .72;
+
+        @media ( min-width: 767px ) {
+
+            margin-bottom: 64px;
+
+        }
+
+    }
+
+}
