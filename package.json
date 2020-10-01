@@ -1,5 +1,5 @@
 {
-    "name": "@adidas/interview-game",
+    "name": "@luxdamore/adidas-interview",
     "version": "1.0.0",
     "description": "Adidas interview test.",
     "license": "MIT",
@@ -17,16 +17,16 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/LuXDAmore/adidas-interview-game.git"
+        "url": "git+https://github.com/LuXDAmore/adidas-interview.git"
     },
     "bugs": {
-        "url": "https://github.com/LuXDAmore/adidas-interview-game/issues"
+        "url": "https://github.com/LuXDAmore/adidas-interview/issues"
     },
     "publishConfig": {
         "access": "public"
     },
     "author": "Luca Iaconelli <lucabelli@msn.com> (https://lucaiaconelli.it)",
-    "homepage": "https://luxdamore.github.io/adidas-interview-game/",
+    "homepage": "https://luxdamore.github.io/adidas-interview/",
     "main": "src/index.js",
     "private": true,
     "files": [
