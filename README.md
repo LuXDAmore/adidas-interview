@@ -36,7 +36,7 @@ This is an interview test code with **React**, made for **Adidas**, you can chec
 2. Install dependencies using `yarn install` or `npm install`;
 3. Copy / rename the file `.env.example` into `.env`;
 4. Start development server using `yarn start` or `npm run start`;
-5. Check your codewith `yarn test` or `npm run test`;
+5. Check your code with some tests, type `yarn test` or `npm run test`;
 6. Build *Github Pages* using `yarn build` or `npm run build` (the content is automatically generated into the `/build` folder).
 
 ___
