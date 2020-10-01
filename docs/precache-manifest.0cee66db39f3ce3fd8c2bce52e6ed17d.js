@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c4bfd8f80bef8f65582fa913323f205",
+    "revision": "220b51a3c01f30980efcbbe1e7d14b43",
     "url": "/adidas-interview-game/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adidas-interview-game/static/css/2.14376d69.chunk.css"
   },
   {
-    "revision": "47478dcbc9b89943a47d",
-    "url": "/adidas-interview-game/static/css/4.5376377d.chunk.css"
+    "revision": "0964b53234cafa8b7b87",
+    "url": "/adidas-interview-game/static/css/3.5376377d.chunk.css"
   },
   {
     "revision": "62ced10a58d4876c6a91",
@@ -24,7 +24,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adidas-interview-game/static/css/7.cb1f6a08.chunk.css"
   },
   {
-    "revision": "440f2c7d2bb7c50b6561",
+    "revision": "60f78d429fb23b9c1b2e",
     "url": "/adidas-interview-game/static/css/main.f54e800f.chunk.css"
   },
   {
@@ -36,12 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adidas-interview-game/static/js/2.dd9b1064.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "af3044420471de51c545",
-    "url": "/adidas-interview-game/static/js/3.18fc1b17.chunk.js"
+    "revision": "0964b53234cafa8b7b87",
+    "url": "/adidas-interview-game/static/js/3.0b3fb4c3.chunk.js"
   },
   {
-    "revision": "47478dcbc9b89943a47d",
-    "url": "/adidas-interview-game/static/js/4.f13e8959.chunk.js"
+    "revision": "9431bdafffba10ae7957",
+    "url": "/adidas-interview-game/static/js/4.3e2d8d08.chunk.js"
   },
   {
     "revision": "62ced10a58d4876c6a91",
@@ -60,11 +60,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adidas-interview-game/static/js/8.33c282e7.chunk.js"
   },
   {
-    "revision": "440f2c7d2bb7c50b6561",
-    "url": "/adidas-interview-game/static/js/main.1bc906a7.chunk.js"
+    "revision": "60f78d429fb23b9c1b2e",
+    "url": "/adidas-interview-game/static/js/main.ecb0d26d.chunk.js"
   },
   {
-    "revision": "e935bdd6f368cc7b6c39",
-    "url": "/adidas-interview-game/static/js/runtime-main.4b28caff.js"
+    "revision": "3b04e8d613be48cbffcb",
+    "url": "/adidas-interview-game/static/js/runtime-main.825173de.js"
   }
 ]);

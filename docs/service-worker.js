@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/adidas-interview-game/precache-manifest.75cf0c2e8156b3330524591067812534.js"
+  "/adidas-interview-game/precache-manifest.0cee66db39f3ce3fd8c2bce52e6ed17d.js"
 );
 
 self.addEventListener('message', (event) => {
