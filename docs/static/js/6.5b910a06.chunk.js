@@ -1,2 +1,0 @@
-(this["webpackJsonp@luxdamore/adidas-interview"]=this["webpackJsonp@luxdamore/adidas-interview"]||[]).push([[6],{290:function(e,t,a){},304:function(e,t,a){"use strict";a.r(t),a.d(t,"default",(function(){return c}));var n=a(0),s=a.n(n);a(290);function c(){return s.a.createElement("section",{className:"not-found page"},s.a.createElement("h1",{className:"title"},"404"),s.a.createElement("h2",{className:"subtitle"},"Page not found"),s.a.createElement("blockquote",{className:"payoff"},"I tried to catch some fog, but i mist"))}}}]);
-//# sourceMappingURL=6.5b910a06.chunk.js.map
