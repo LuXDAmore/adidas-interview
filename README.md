@@ -1,6 +1,9 @@
 # 🎉 Adidas - Interview
 
 [![Adidas][adidas-src]][adidas-href]
+
+___
+
 [![Circle CI][circle-ci-src]][circle-ci-href]
 [![Dependencies][dependencies-src]][dependencies-href]
 [![License][license-src]][license-href]
