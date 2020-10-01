@@ -5,11 +5,15 @@ import PropTypes from 'prop-types';
 // Third parties
 import Swal from 'sweetalert2';
 
-// Components
-import Box from '../../components/Box/Box';
-
 // Style
 import './Style.scss';
+
+// Components
+const Box = React.lazy(
+    () => import(
+        '../../components/Box/Box'
+    )
+);
 
 // Declaration
 export default class Play extends React.Component {
@@ -67,7 +71,7 @@ export default class Play extends React.Component {
 
             switch( pathname ) {
                 case '/hard':
-                    url = '/you-win';
+                    url = `/you-win/${ this.props.level }`;
                     break;
                 case '/medium':
                     url = '/hard';
@@ -78,7 +82,7 @@ export default class Play extends React.Component {
             }
 
         } else
-            url = '/game-over';
+            url = `/game-over/${ this.props.level }`;
 
         history.push(
             url
@@ -140,13 +144,15 @@ export default class Play extends React.Component {
             boxes.push(
                 (
                     <li key={ `${ level }-${ index }` }>
-                        <Box
-                            isWinner={ isWinner }
-                            onResult={ this.handleResults }
-                            backgroundColor={ backgroundColor }
-                            reveal={ this.state.played }
-                            ref={ isWinner ? this.state.winnerBox : null }
-                        />
+                        <React.Suspense fallback={<div className="loading spinner spinner--small" />}>
+                            <Box
+                                isWinner={ isWinner }
+                                onResult={ this.handleResults }
+                                backgroundColor={ backgroundColor }
+                                reveal={ this.state.played }
+                                ref={ isWinner ? this.state.winnerBox : null }
+                            />
+                        </React.Suspense>
                     </li>
                 )
             );
@@ -156,16 +162,19 @@ export default class Play extends React.Component {
         const footer = this.props.played
             ? null
             : (
-                <footer>
+                <footer className="cheating">
+                    <span className="arrow">&raquo;</span>
                     <button
                         type="button"
                         className="btn btn--medium btn btn--border text--white bg--primary"
                         onClick={ this.handleCheating }
                     >
                         <strong>
-                            I&apos;M A CHEATER
+                            CHEAT
+                            <span role="img" aria-label="Angry Emoji">😤</span>
                         </strong>
                     </button>
+                    <span className="arrow">&laquo;</span>
                 </footer>
             )
         ;

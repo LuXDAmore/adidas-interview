@@ -3,10 +3,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 // Component
-export default class BackToHomeButton extends React.Component {
-    render() {
+export default function BackToHomeButton() {
 
-        return (
+    return (
+        <section className="back-to-home">
             <nav>
                 <ul className="navigation">
                     <li className="navigation-item">
@@ -14,7 +14,7 @@ export default class BackToHomeButton extends React.Component {
                     </li>
                 </ul>
             </nav>
-        );
+        </section>
+    );
 
-    }
 }
