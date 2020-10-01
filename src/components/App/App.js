@@ -14,11 +14,13 @@ import Colors from 'color-convert';
 // Styles
 import './Style.scss';
 
-// Pages
-import Home from '../../pages/Home/Home';
-
 // Lazy
-const GameOver = React.lazy(
+const Home = React.lazy(
+        () => import(
+            '../../pages/Home/Home'
+        )
+    )
+    , GameOver = React.lazy(
         () => import(
             '../../pages/GameOver/GameOver'
         )
@@ -38,7 +40,17 @@ const GameOver = React.lazy(
             '../../pages/Play/Play'
         )
     )
+    , Scoreboard = React.lazy(
+        () => import(
+            '../../pages/Scoreboard/Scoreboard'
+        )
+    )
     // Components
+    , AddToScoreboard = React.lazy(
+        () => import(
+            '../AddToScoreboard/AddToScoreboard'
+        )
+    )
     , BackToHomeButton = React.lazy(
         () => import(
             '../BackToHomeButton/BackToHomeButton'
@@ -180,9 +192,12 @@ export default class App extends React.Component {
 
                         <Switch>
                             <Route exact path="/">
-                                <Home />
+                                <React.Suspense fallback={<div className="loading spinner" />}>
+                                    <Home />
+                                </React.Suspense>
                             </Route>
                             <Route
+                                exact
                                 path="/easy"
                                 render={
                                     props => (
@@ -203,6 +218,7 @@ export default class App extends React.Component {
                                 }
                             />
                             <Route
+                                exact
                                 path="/medium"
                                 render={
                                     props => (
@@ -223,6 +239,7 @@ export default class App extends React.Component {
                                 }
                             />
                             <Route
+                                exact
                                 path="/hard"
                                 render={
                                     props => (
@@ -242,15 +259,33 @@ export default class App extends React.Component {
                                     )
                                 }
                             />
-                            <Route exact path="/game-over">
+                            <Route
+                                path="/game-over/:points"
+                                render={
+                                    props => (
+                                        <React.Suspense fallback={<div className="loading spinner" />}>
+                                            <GameOver />
+                                            <AddToScoreboard { ... props } />
+                                            <BackToHomeButton />
+                                        </React.Suspense>
+                                    )
+                                }
+                            />
+                            <Route
+                                path="/you-win/:points"
+                                render={
+                                    props => (
+                                        <React.Suspense fallback={<div className="loading spinner" />}>
+                                            <Win />
+                                            <AddToScoreboard { ... props } />
+                                            <BackToHomeButton />
+                                        </React.Suspense>
+                                    )
+                                }
+                            />
+                            <Route path="/scoreboard">
                                 <React.Suspense fallback={<div className="loading spinner" />}>
-                                    <GameOver />
-                                    <BackToHomeButton />
-                                </React.Suspense>
-                            </Route>
-                            <Route exact path="/you-win">
-                                <React.Suspense fallback={<div className="loading spinner" />}>
-                                    <Win />
+                                    <Scoreboard />
                                     <BackToHomeButton />
                                 </React.Suspense>
                             </Route>
@@ -280,7 +315,7 @@ export default class App extends React.Component {
                             colors={ this.state.availableColors }
                             color={ this.state.background }
                             onChangeComplete={ this.handleChangeComplete }
-                            width="116px"
+                            width="112px"
                         />
 
                         <button type="button" className="btn btn--small btn--border text--white" onClick={ this.handleRandomColor }>

@@ -1,0 +1,55 @@
+.add-to-scoreboard {
+
+    margin: 8px auto 36px;
+
+    header {
+
+        padding: 0 4px;
+
+    }
+
+    h5,
+    p {
+
+        margin: 0 auto 8px;
+
+    }
+
+    fieldset {
+
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+
+    }
+
+    input {
+
+        display: block;
+        width: 100%;
+        min-width: 250px;
+        padding: 2px 8px;
+        color: rgba( 0, 0, 0, 1 );
+        font-size: 16px;
+        line-height: 2;
+        background: #f8f4e5;
+        border-width: 0;
+        border-bottom: 5px solid rgba( 0, 0, 0, 1 );
+        border-radius: 6px;
+        outline: none;
+        transition: all .3s ease-in-out;
+
+        &:hover,
+        &:focus {
+
+            border-bottom: 5px solid #333;
+
+        }
+
+    }
+
+
+}
