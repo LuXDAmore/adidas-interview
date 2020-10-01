@@ -60,9 +60,9 @@ body {
 
         margin: 0 auto 16px;
         font-weight: bolder;
-        font-size: 56px;
+        font-size: 63px;
         letter-spacing: 4px;
-        mix-blend-mode: soft-light; // stylelint-disable-line
+        mix-blend-mode: multiply; // stylelint-disable-line
 
     }
 
@@ -76,6 +76,7 @@ body {
     padding: 4px 8px;
     font-weight: 300;
     font-size: 12px;
+    text-align: center;
     text-decoration: none;
     background-color: transparent;
     border: 1px solid currentColor;
@@ -84,6 +85,15 @@ body {
     cursor: pointer;
     opacity: .45;
     transition: all .3s ease-in-out;
+
+    &[disabled],
+    &--disabled {
+
+        cursor: not-allowed !important;
+        opacity: .3 !important;
+        pointer-events: none;
+
+    }
 
     &--background {
 
@@ -228,6 +238,15 @@ body {
         background-color: $primary;
         mix-blend-mode: soft-light; // stylelint-disable-line
         animation: spinner 1.2s infinite ease-in-out;
+
+        &--small {
+
+            width: 20px;
+            height: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
 
     }
 
