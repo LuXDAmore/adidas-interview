@@ -158,17 +158,17 @@ export default class App extends React.Component {
                         <nav>
                             <ul className="navigation">
                                 <li className="navigation-item">
+                                    <a href={ `${ PUBLIC_URL }/requirements/REACT-Challenge-eCom.pdf` } rel="noopener noreferrer" target="_blank" title="About" className="btn btn--link">
+                                        About
+                                    </a>
+                                </li>
+                                <li className="navigation-item">
                                     <NavLink exact to="/" activeClassName="active" title="Go to homepage">
                                         <img src={ `${ PUBLIC_URL }/imgs/logo.svg` } className="header__logo image" alt="Adidas Logo" />
                                     </NavLink>
                                 </li>
                                 <li className="navigation-item">
-                                    <a href={ `${ PUBLIC_URL }/requirements/REACT-Challenge-eCom.pdf` } rel="noopener noreferrer" target="_blank">
-                                        About
-                                    </a>
-                                </li>
-                                <li className="navigation-item">
-                                    <a href="https://github.com/LuXDAmore/adidas-interview" rel="noopener noreferrer" target="_blank">
+                                    <a href="https://github.com/LuXDAmore/adidas-interview" rel="noopener noreferrer" target="_blank" title="Github" className="btn btn--link">
                                         Github
                                     </a>
                                 </li>
@@ -268,7 +268,7 @@ export default class App extends React.Component {
                         <button
                             type="button"
                             aria-pressed={ this.state.played }
-                            className="btn btn--small btn--border btn--white"
+                            className="btn btn--small btn--border text--white"
                             onClick={ this.handleShowSolution }
                         >
                             Show solutions
@@ -283,7 +283,7 @@ export default class App extends React.Component {
                             width="116px"
                         />
 
-                        <button type="button" className="btn btn--small btn--border btn--white" onClick={ this.handleRandomColor }>
+                        <button type="button" className="btn btn--small btn--border text--white" onClick={ this.handleRandomColor }>
                             Randomize!
                         </button>
 

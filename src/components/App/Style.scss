@@ -14,19 +14,31 @@
 
 .header {
 
-    display: flex;
-    flex: 0 1 auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 20px;
+    .navigation {
+
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 20px;
+
+        &-item {
+
+            margin: 0 16px;
+
+        }
+
+    }
 
     &__logo {
 
+        min-width: 100px;
         max-width: 100px;
         mix-blend-mode: soft-light; // stylelint-disable-line
 
     }
+
 
 }
 
@@ -44,16 +56,31 @@
 
 .footer {
 
-    position: fixed;
     right: 0;
     bottom: 8px;
     left: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 16px;
     text-align: center;
+
+    .btn {
+
+        padding-top: 4px;
+        padding-bottom: 4px;
+
+    }
+
+    @media ( min-width: 767px ) {
+
+        position: fixed;
+        flex-direction: row;
+        margin-top: 0;
+
+    }
 
 }
 

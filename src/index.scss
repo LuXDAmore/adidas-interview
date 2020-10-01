@@ -39,14 +39,13 @@ body {
     padding: 0;
     list-style: none;
 
-    .navigation-item {
+    &-item {
 
         a {
 
             display: inline-flex;
             color: $primary;
             font-weight: normal;
-            text-decoration: none;
 
         }
 
@@ -73,11 +72,12 @@ body {
 .btn {
 
     display: inline-block;
-    margin: 4px 16px;
-    padding: 8px 14px;
+    margin: 4px 8px;
+    padding: 4px 8px;
     font-weight: 300;
     font-size: 12px;
-    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
     border: 1px solid currentColor;
     border-radius: 4px;
     outline: none;
@@ -85,9 +85,10 @@ body {
     opacity: .45;
     transition: all .3s ease-in-out;
 
-    &--white {
+    &--background {
 
-        color: #fff;
+        text-decoration: underline;
+        background-color: rgba( 255, 255, 255, .63 );
 
     }
 
@@ -101,7 +102,6 @@ body {
     &--small {
 
         padding: 4px 8px;
-        background-color: transparent;
         opacity: .81;
 
     }
@@ -111,7 +111,6 @@ body {
         margin-top: 8px;
         margin-bottom: 8px;
         font-size: 13px;
-        background-color: transparent;
         opacity: .81;
 
     }
@@ -121,9 +120,24 @@ body {
         padding: 24px 20px;
         font-weight: normal;
         font-size: 18px;
-        background-color: transparent;
         border: 2px dotted #fff;
         opacity: .81;
+
+    }
+
+    &--link {
+
+        text-decoration: underline;
+        border-color: transparent;
+        opacity: 1;
+
+        &:focus,
+        &:active,
+        &:hover {
+
+            font-size: 101%;
+
+        }
 
     }
 
@@ -143,9 +157,27 @@ body {
 
     }
 
+    @media ( min-width: 767px ) {
+
+        margin-right: 16px;
+        margin-left: 16px;
+        padding: 8px 14px;
+
+    }
+
 }
 
 // Styles
+.text {
+
+    &--white {
+
+        color: #fff;
+
+    }
+
+}
+
 .bg {
 
     &--primary {

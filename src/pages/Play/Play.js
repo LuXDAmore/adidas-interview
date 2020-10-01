@@ -159,7 +159,7 @@ export default class Play extends React.Component {
                 <footer>
                     <button
                         type="button"
-                        className="btn btn--medium btn btn--border btn--white bg--primary"
+                        className="btn btn--medium btn btn--border text--white bg--primary"
                         onClick={ this.handleCheating }
                     >
                         <strong>

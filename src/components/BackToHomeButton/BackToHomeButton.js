@@ -10,7 +10,7 @@ export default class BackToHomeButton extends React.Component {
             <nav>
                 <ul className="navigation">
                     <li className="navigation-item">
-                        <NavLink exact to="/" title="Back to home" className="btn">BACK TO HOME</NavLink>
+                        <NavLink exact to="/" title="Back to home" className="btn btn--background">BACK TO HOME</NavLink>
                     </li>
                 </ul>
             </nav>
