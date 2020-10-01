@@ -1,5 +1,6 @@
 {
-    "name": "Adidas",
+    "name": "Adidas IT",
+    "short_name": "Adidas",
     "description": "Adidas interview test.",
     "start_url": ".",
     "display": "standalone",
