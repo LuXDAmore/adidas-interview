@@ -69,19 +69,6 @@ Details changes for each release are documented in the [**release notes**](./CHA
 
 [MIT License](./LICENSE) // Copyright (©) 2019-present [Luca Iaconelli](https://lucaiaconelli.it)
 
-#### 💸 Are you feeling generous today?  :)
-
-Do you want to share a beer? We can be good friends..
-__[Paypal](https://www.paypal.me/luxdamore) // [Patreon](https://www.patreon.com/luxdamore)__
-
-> _It's always a good day to be magnanimous - cit_
-
-#### 💼 Hire me
-
-[![Contacts](https://img.shields.io/badge/email-Contact%20me-success)](https://lucaiaconelli.it)
-
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/luxdamore)
-
 ___
 
 #### 💡 Lighthouse
